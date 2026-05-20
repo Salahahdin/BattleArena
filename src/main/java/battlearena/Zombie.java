@@ -10,7 +10,16 @@ public class Zombie extends Enemy {
         System.out.println("*Grumbling*");
     }
 
-   public void spreadDisease(){
-       System.out.println("The zombie is spreading infection");
-   }
+    @Override
+    public void specialAttack(){
+        boolean didSpecialAttackWork = Math.random() < .50;
+        if(didSpecialAttackWork){
+            setHealthPointsRemaining(getHealthPointsRemaining()+2);
+            System.out.println("Zombie regenerated 2 HP!");
+        }
+    }
+
+    public void attack(){
+        System.out.println("Zombie attacks for " + getAttackDamage() + " damage");
+    }
 }
