@@ -1,4 +1,6 @@
-package battlearena;
+package battlearena.heroes;
+
+import battlearena.heroes.weapons.Weapon;
 
 public interface IHero {
     int getHealthPoints();

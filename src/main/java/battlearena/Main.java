@@ -1,6 +1,12 @@
 package battlearena;
 
-import static battlearena.Enemy.getNumberOfEnemies;
+import battlearena.heroes.Hero;
+import battlearena.heroes.weapons.Weapon;
+import battlearena.enemies.Enemy;
+import battlearena.enemies.individualenemy.Ogre;
+import battlearena.enemies.individualenemy.Zombie;
+
+import static battlearena.enemies.Enemy.getNumberOfEnemies;
 
 public class Main {
     public static void main(String[] args) {

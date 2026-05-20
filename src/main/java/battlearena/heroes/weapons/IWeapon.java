@@ -1,4 +1,4 @@
-package battlearena;
+package battlearena.heroes.weapons;
 
 public interface IWeapon{
     String getWeaponType();

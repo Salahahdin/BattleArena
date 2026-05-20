@@ -1,4 +1,6 @@
-package battlearena;
+package battlearena.heroes;
+
+import battlearena.heroes.weapons.Weapon;
 
 public class Hero implements IHero{
     private int healthPoints;
