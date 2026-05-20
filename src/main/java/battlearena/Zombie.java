@@ -1,6 +1,6 @@
 package battlearena;
 
-public class Zombie extends Enemy {
+public class Zombie extends Enemy implements IZombie {
     public Zombie(int healthPoints, int attackDamage){
         super(healthPoints, attackDamage);
     }
@@ -21,5 +21,10 @@ public class Zombie extends Enemy {
 
     public void attack(){
         System.out.println("Zombie attacks for " + getAttackDamage() + " damage");
+    }
+
+    @Override
+    public void battleStance() {
+        System.out.println("Zombie cracks neck and sticks arms out");
     }
 }
